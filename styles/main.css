@@ -1,0 +1,115 @@
+main{
+    width: 100%;
+}
+
+.hero-section{
+    height: 750px;
+    width: 100%;
+    background-image: url(../img/Hero\ section-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    position: relative;
+}
+
+.article-item{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-width: 355px;
+    height: 460px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.item-container{
+    padding: 10px 10px 0 10px;
+    margin-bottom: 25px;
+}
+.article-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0 24px;
+}
+
+.recent-articles,
+.travel-list,
+.article,
+.itinerary-section,
+.tavel-itinerary-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent-articles{
+    padding: 80px 20px;
+    gap:40px;
+    background: var(--bg--secondary);
+}
+
+.travel-list{
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.recent-articles ul li{
+    background-color: #FFF;
+    width: 335px;
+} 
+
+.container-image{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 0 10px;
+}
+
+.article{
+    gap: 12px;
+    padding: 15px 24px;
+}
+
+.itinerary-section{
+    background: var(--bg--itinerary);
+    padding:  80px 20px;
+    gap: 40px;
+}
+.tavel-itinerary-list{
+    padding: 5px;
+}
+
+.itinerary-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 65%;
+}
+
+.itinerary-item{
+    border-top: 1px dotted var(--bg--secondary);
+    display: flex;
+    padding: 24px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itinerary-item:last-child{
+    border-bottom: 1px dotted var(--bg--secondary);
+}
+
+.details{
+
+    float: right;
+}
+
+@media screen and (min-width: 700px) {
+    .travel-list{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+}

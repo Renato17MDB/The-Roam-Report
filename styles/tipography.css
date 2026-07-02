@@ -1,0 +1,147 @@
+h1,h2,h3,h4,h5,p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:var(--links--color);
+    font-weight: 500; /*SEMI BOLD*/
+    font-size: 14px;
+}
+.main-content h1{
+    font-size: 56px;
+    color: var(--text--paragraph);
+    font-weight: 300; /*REGULAR*/
+    font-family: var(--font--title);
+}
+.secondary-content p{
+    font-family: var(--font--paragraph);
+    font-weight: 400; /*MEDIUM*/
+    font-size: 16px;
+    color: var(--text--paragraph);
+}
+.item p,
+.item i{
+    color: var(--text--paragraph);
+}
+.item p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font--paragraph);
+}
+
+.item i{
+        font-size: 16px;
+    flex-shrink: 0;
+}
+
+.article-content h3, p, a{
+    font-family: var(--font--paragraph);
+}
+
+.article-content h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color--titule);
+}
+
+.article-content p{
+    font-weight: 400; /*MEDIUM*/
+    font-size: 16px;
+    color: var(--links--color);
+}
+
+.article-content a{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color--titule);
+}
+
+.article time{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--links--color);
+}
+
+.article p{
+    color: var(--font--title);
+    font-size: 22px;
+    font-family: var(--text--paragraph);
+    font-weight: 500;
+}
+
+.itinerary-section h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.order-list{
+    font-size: 72px;
+    font-weight: 400;
+    font-family: var(--font--order);
+}
+.itinerary-section h2,
+.itinerary-content h3,
+.details p{
+    font-family: var(--font--paragraph);
+}
+
+.itinerary-content h3,
+.details p{
+    text-align: left;
+    font-weight: 400;
+}
+
+.itinerary-section h2, .order-list, .itinerary-content h3, .details p{
+    color: var(--color--list);
+}
+
+.itinerary-content h3{
+    font-size: 20px;;
+}
+
+.details p{
+    font-size: 16px;;
+}
+
+/*FOOTER*/
+
+.header h2,
+.header h3{
+    color: var(--color--titule);
+}
+
+.header h2{
+    font-family: var(--font--title);
+    font-size: 50px;
+}
+
+.header h3{
+    font-family: var(--font--paragraph);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer-links a{
+    color: var(--color--titule);
+    font-size: 16px;
+    font-family: var(--font--paragraph);
+    font-weight: 400;
+}
+
+.copyright{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font--paragraph);
+    color: var(--color--titule);
+}
+
+@media screen and (min-width: 700px) {
+    .main-content h1{
+        font-size: 80px;
+    }
+    .secondary-content p
+    .item p{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,79 @@
+header{
+    flex: 1;
+    gap: 40px;
+    align-items: center;
+    padding: 0 20px;
+    background: linear-gradient(to top, #C6DCFF 0, #C6DCFF 100%);
+}
+header > nav{
+    max-width: 228px;
+    margin-top: 10px;
+    background: var(--bg--nav);
+    padding: 16px 24px;
+    border: 1px solid #C6DCFF;
+    border-radius: 50px;
+}
+nav ul{ 
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+.main-content{
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+.secondary-content{
+    width: 95%;
+    gap: 24px;
+    align-items: center;
+}
+.train_ilustration{
+    width: 120px;
+    height: 110px;
+    background-image: url(../img/Train\ illustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1em;
+}
+
+.main-content,
+.secondary-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.marquee-container{
+    width: 100%;
+    overflow: hidden;
+    padding-right: 16px;
+}
+
+.track{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: max-content;
+    animation: marquee 10s linear infinite;
+    will-change: transform;
+}
+
+.item{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    white-space: nowrap;
+    min-width: 130px;
+}
+
+@keyframes marquee{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
